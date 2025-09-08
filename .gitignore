@@ -1,0 +1,50 @@
+# ---- macOS system files ----
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# ---- General backup / temp ----
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.log
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.venv
+*.ipynb_checkpoints
+
+# ---- Jupyter ----
+.ipynb_checkpoints
+
+# ---- LaTeX ----
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# ---- Editors ----
+.vscode/
+.idea/
+*.iml
+
+# ---- OS-specific ----
+Thumbs.db
+Desktop.ini
