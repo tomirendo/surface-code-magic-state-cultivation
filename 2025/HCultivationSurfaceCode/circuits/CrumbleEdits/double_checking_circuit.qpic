@@ -1,0 +1,39 @@
+0 W owire
+1 W owire
+2 W owire
+3 W owire
+4 W owire
+5 W owire
+1 G {\scriptsize $R$} 1:qwire
+3 G {\scriptsize $R$} 3:qwire
+5 G {\scriptsize $R$} 5:qwire
+0 G {\scriptsize $R_X$} 0:qwire
+2 G {\scriptsize $R_X$} 2:qwire
+4 G {\scriptsize $R_X$} 4:qwire
+0 1 2 3 4 5 TOUCH
+4 5
+2 +3
+0 +1
+0 1 2 3 4 5 TOUCH
+2 +0
+0 1 2 3 4 5 TOUCH
+2 +4
+0 1 2 3 4 5 TOUCH
+2 M {\scriptsize $M_X$} 2:owire
+2 G {\scriptsize $R_X$} 2:qwire
+0 1 2 3 4 5 TOUCH
+2 +4
+0 1 2 3 4 5 TOUCH
+2 +0
+0 1 2 3 4 5 TOUCH
+0 +1
+2 +3
+4 +5
+0 1 2 3 4 5 TOUCH
+2 M {\scriptsize $M_X$} 2:owire
+0 M {\scriptsize $M_X$} 0:owire
+4 M {\scriptsize $M_X$} 4:owire
+2 G {\scriptsize $R_X$} 2:qwire
+0 G {\scriptsize $R_X$} 0:qwire
+4 G {\scriptsize $R_X$} 4:qwire
+
