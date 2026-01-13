@@ -21,7 +21,7 @@ Run the following three scripts, in order, to:
 3) combine the samples into a single CSV called `stats_combined.csv`.
 
 - `step1_generate_circuits.bash`
-- `step2_sample.bash`
+- `step2_sample.bash` 
 - `step3_combine.bash`
 
 A full version of `stats_combined.csv` is already included in the repository.
