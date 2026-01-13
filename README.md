@@ -4,11 +4,33 @@ Yotam Vaknin, Shoham Jacoby, Arne Grimsmo, Alex Retzker
 
 ---
 
-## Disclaimer
+# Instructions
 
-This repository was **not designed for external use**. It’s primarily here as a reference alongside the publication.  
-The code is messy, undocumented, and full of shortcuts we used during research.  
-If you’re interested in the ideas or want to reproduce results, feel free to reach out.  
+## Setup
+Install the Python dependencies listed in `requirements.txt`.
+
+## Where the core results live
+The core results are in:
+
+- `2025/HCultivationSurfaceCode`
+
+## Reproducing the main CSV output - Clifford Simulations
+Run the following three scripts, in order, to:
+1) generate the circuits,
+2) sample them, and
+3) combine the samples into a single CSV called `stats_combined.csv`.
+
+- `step1_generate_circuits.bash`
+- `step2_sample.bash`
+- `step3_combine.bash`
+
+A full version of `stats_combined.csv` is already included in the repository.
+
+## Full Vector Simulation
+Full vector simulations are done using `sample.py` script. Our samples are included in `combined_vec_sim.csv`
+
+## Plots
+Plots are generated in `plots.ipynb`.
 
 ---
 
