@@ -127,7 +127,7 @@ class CompiledPymatchingGapSampler(sinter.CompiledSampler):
         )
         num_shots = dets.shape[0]
         discard_mask = np.any(dets & self.postselection_mask, axis=1)
-        num_discards = np.count_nonzero(discard_mask)
+        num_discards = int(np.count_nonzero(discard_mask))
         dets = dets[~discard_mask]
         actual_obs = actual_obs[~discard_mask]
         num_kept_shots = dets.shape[0]
@@ -154,14 +154,14 @@ class CompiledPymatchingGapSampler(sinter.CompiledSampler):
         errors = predictions != actual_obs[:, 0]
         sorted_weights = np.sort(weights, axis=1)
         gaps = (sorted_weights[:, 1] - sorted_weights[:, 0])
-        num_errors = np.count_nonzero(errors)
+        num_errors = int(np.count_nonzero(errors))
 
         # Classify all shots by their error + gap.
         custom_counts = collections.Counter()
         gaps_db = np.round(gaps * self.decibels_per_w).astype(dtype=np.int64)
         for k in range(num_kept_shots):
             g = gaps_db[k]
-            e = 'CE'[errors[k]]
+            e = 'E' if errors[k] else 'C'
             key = f'{e}{g}'
             custom_counts[key] += 1
         t1 = time.monotonic()
