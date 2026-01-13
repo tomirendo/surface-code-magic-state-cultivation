@@ -87,7 +87,7 @@ if __name__ == '__main__':
     try:    
         #output_file = f"/home/data/yotam/full_vec_simulation/yotam/data/{sys.argv[1]}"
         # output_file = f"/home/data/yotam/full_vec_simulation/double_correct_third_{sys.argv[1]}"
-        output_file = f"/home/data/yotam/full_vec_simulation/rotated_HXY_injection_double_ghz_{sys.argv[1]}"
+        output_file = f"./rotated_HXY_injection_double_ghz_{sys.argv[1]}"
     except:
         raise ValueError('No output file provided')
     try:

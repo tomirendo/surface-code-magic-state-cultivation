@@ -27,7 +27,7 @@ Run the following three scripts, in order, to:
 A full version of `stats_combined.csv` is already included in the repository.
 
 ## Full Vector Simulation
-Full vector simulations are done using `sample.py` script. Our samples are included in `combined_vec_sim.csv`
+Full vector simulations are done using `sample.py` script and combined into a single file using `combine_state_vec_sim.py`. Our samples are included in `combined_vec_sim.csv`
 
 ## Plots
 Plots are generated in `plots.ipynb`.
