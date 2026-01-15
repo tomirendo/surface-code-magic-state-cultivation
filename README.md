@@ -61,12 +61,18 @@ The core results and code are located in:
   - Plotting notebooks
 
 Main file:
-- `simulation.py`
+- `simulation.py` - Generates the different circuits. The Simulation object represent a single surface code, with class methods such as:
+   - `generate_double_ghz'
+   - `generate_injection_circuit`
+   - `generate_syndrome_circuit`
+   generate the different steps of our protocol in using our Circuit object. The final expansion step is described in `stim_expansion_circuit`, only 
+   defined for stim since it only occurs on the Clifford simulations. 
+
 
 Key directories:
 - `circuits/` - Generated Stim circuit files
 - `fig/` - Output figures
-- `sampler/` - Sampling utilities
+- `sampler/` - Code for the two samplers we use, either full post-selection or based on gap-decoding. 
 - `cultiv_code/` - Cultivation code from Gidney et al. with some changes
 
 ---
