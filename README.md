@@ -62,12 +62,13 @@ The core results and code are located in:
 
 Main file:
 - `simulation.py` - Generates the different circuits. The Simulation object represent a single surface code, with class methods such as:
-   - `generate_double_ghz'
+   - `generate_double_ghz`
    - `generate_injection_circuit`
    - `generate_syndrome_circuit`
-   generate the different steps of our protocol in using our Circuit object. The final expansion step is described in `stim_expansion_circuit`, only 
-   defined for stim since it only occurs on the Clifford simulations. 
+   generate the different steps of our protocol in using our Circuit object. 
 
+The final expansion step is described in `stim_expansion_circuit`, only 
+   defined for stim since it only occurs on the Clifford simulations. 
 
 Key directories:
 - `circuits/` - Generated Stim circuit files
