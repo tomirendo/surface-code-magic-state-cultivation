@@ -65,7 +65,8 @@ Main file:
    - `generate_double_ghz`
    - `generate_injection_circuit`
    - `generate_syndrome_circuit`
-   generate the different steps of our protocol in using our Circuit object. 
+
+generate the different steps of our protocol in using our Circuit object. 
 
 The final expansion step is described in `stim_expansion_circuit`, only 
    defined for stim since it only occurs on the Clifford simulations. 
@@ -82,7 +83,7 @@ Key directories:
 
 ### Main Results: Clifford Simulations
 
-The main simulation results use Clifford tableau simulation via Stim and Sinter. To reproduce the results:
+The main simulation results use Clifford simulation via Stim and Sinter. To reproduce the results:
 
 1. **Generate circuits**: Creates all Stim circuit files needed for simulation
    ```bash
@@ -102,20 +103,18 @@ The main simulation results use Clifford tableau simulation via Stim and Sinter.
 
 The final output is `stats_combined.csv`, which contains the main simulation results. A pre-computed version of this file is already included in the repository.
 
-**Note**: The sampling step (step 2) can take significant computational time depending on the number of shots and circuit sizes.
-
 ### Full State Vector Simulation
 
 For exact state vector simulations (used for smaller circuits):
 
 1. Run the sampling script:
    ```bash
-   python sample.py
+   python sample.py result_file
    ```
 
 2. Combine the results:
    ```bash
-   python combine_state_vec_sim.py
+   python combine_state_vec_sim.py result_file1 result_file2
    ```
 
 This produces `combined_vec_sim.csv`. A pre-computed version is included in the repository. The computation-time requires to reproduce this step is over a million CPU hours.
